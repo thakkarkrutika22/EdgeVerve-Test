@@ -1,3 +1,5 @@
+<img width="1724" alt="Screenshot 2024-11-12 at 7 41 58 AM" src="https://github.com/user-attachments/assets/12c91efa-8e9b-48ef-b473-2070abe0b45c">
+
 # AngularTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
@@ -42,5 +44,5 @@ Description: This component has all fields to search for role level access contr
 Component 4: app-table
 Description: This component displays a table with customizable data and action icons for editing and viewing items.
 
-<img width="1724" alt="Screenshot 2024-11-12 at 7 41 58 AM" src="https://github.com/user-attachments/assets/12c91efa-8e9b-48ef-b473-2070abe0b45c">
+
 
