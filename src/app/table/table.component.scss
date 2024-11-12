@@ -1,0 +1,55 @@
+/* Table Container */
+.table-container {
+    padding: 20px;
+    background-color: var(--pure-white);
+    border-radius: 8px;
+    box-shadow: var(--default-box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .table-header h3{
+    margin: 0;
+  }
+  
+  .filter-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .access-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--pure-white);
+  }
+  
+  .access-table th,
+  .access-table td {
+    border: 1px solid var(--white);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .access-table th {
+    background-color: var(--light-grey-shade);
+  }
+  
+  .actions {
+    display: flex;
+    gap: 1rem;
+    border: none;
+  }
+  
+  .actions i {
+    cursor: pointer;
+  }
+
+  

@@ -1,0 +1,50 @@
+// Input field styles
+.input-field {
+    min-width: 300px;
+    padding: 7px 10px;
+    font-size: 14px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    outline: none;
+    color: var(--grey);
+}
+
+
+
+// Grid Styles
+.grid-row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.grid-col {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+
+
+// Button styles
+.btn {
+    outline: none;
+    border: none;
+    color: var(--white);
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+}
+
+.btn-secondary{
+    background-color: var(--grey);
+}
+
+.btn-linked {
+    background:none;
+    color: var(--grey);
+}

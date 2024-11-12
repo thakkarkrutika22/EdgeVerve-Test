@@ -1,0 +1,59 @@
+<div class="main-search-container">
+
+    <div class="breadcrumb">
+        <a href="#">Home &nbsp;>&nbsp; </a>
+        <a href="#"> Admin &nbsp;>&nbsp; </a>
+        <span>Access Control</span>
+    </div>
+
+    <div class="container">
+
+        <h3>Maintain Role Level Access Control</h3>
+        <hr class="custom-line">
+        <div class="search-container">
+            <p class="section-title">Search Criteria</p>
+            <form [formGroup]="searchForm">
+                <div class="grid-row">
+                    <div class="grid-col">
+                        <label for="Role">Role</label>
+                        <input type="text" placeholder="Search Role" formControlName="role" class="input-field"
+                            required />
+                    </div>
+
+                    <div class="grid-col">
+                        <label for="Access Control">Access Control Type</label>
+                        <select class="input-field" formControlName="accessControlType">
+                            <option value="">Access Control Type</option>
+                            <option value="cat1">Read</option>
+                            <option value="cat2">Write</option>
+                        </select>
+                    </div>
+
+
+                    <div class="grid-col">
+                        <label for="Case Category">Case Category</label>
+                        <app-custom-chips placeholder="Add Case Category" formControlName="caseCategory"
+                            (itemsChange)="onItemsChange($event)"></app-custom-chips>
+                    </div>
+
+                    <div class="grid-col">
+                        <label for="Case Category">Case Sub Category</label>
+                        <app-custom-chips placeholder="Add Case Sub Category" formControlName="caseSubCategory"
+                            (itemsChange)="onItemsChange($event)"></app-custom-chips>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-linked" type="submit">Clear</button>
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+        <!-- Table Section -->
+        <div id="table-section">
+            <app-table></app-table>
+        </div>
+
+    </div>
+
+</div>

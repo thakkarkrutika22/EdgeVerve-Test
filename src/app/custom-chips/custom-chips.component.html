@@ -1,0 +1,13 @@
+<div class="chips-container input-field">
+    <div class="chip" *ngFor="let item of items; let i = index">
+      {{ item }}
+      <span class="remove" (click)="removeItem(i)">×</span>
+    </div>
+    <input
+      [(ngModel)]="inputText"
+      [placeholder]="placeholder"
+      (keydown.enter)="addItem()"
+      (blur)="addItem()"
+      type="text"
+    />
+  </div>

@@ -1,0 +1,30 @@
+.chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    .chip {
+      background-color: var(--off-white);
+      border-radius: 16px;
+      padding: 4px 8px;
+      margin: 4px;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+    }
+    
+    .remove {
+      margin-left: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: var(--grey);
+    }
+
+    input[type="text"] {  
+      border: none;
+      outline: none;
+      flex: 1;
+    }
+  }
+  
+  
+  
+  

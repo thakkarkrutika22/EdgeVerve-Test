@@ -1,0 +1,21 @@
+.left-nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100px; 
+    height: 100vh;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    color: white;
+  }
+
+
+.left-nav i {
+    font-size: 24px;
+    margin: 23px 0;
+    cursor: pointer;
+    color: white;
+  }

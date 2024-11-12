@@ -1,0 +1,35 @@
+<div class="table-container">
+    <!-- Title and Filter Icon -->
+    <div class="table-header">
+      <h3>Access Controls</h3>
+      <i class="fa fa-filter filter-icon" title="Filter"></i>
+    </div>
+  
+    <!-- Table -->
+    <table class="access-table main-table">
+      <thead>
+        <tr class="table-header-row">
+          <th>Case Category</th>
+          <th>Case Sub Category</th>
+          <th>Field Name</th>
+          <th>Access Type</th>
+          <th>Masking Preview</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of tableData" class="table-data-row">
+          <td>{{ row.caseCategory }}</td>
+          <td>{{ row.caseSubCategory }}</td>
+          <td>{{ row.fieldName }}</td>
+          <td>{{ row.accessType }}</td>
+          <td>{{ row.maskingPreview }}</td>
+          <td class="actions">
+            <i class="fa fa-eye" title="View" (click)="viewItem(row)"></i>
+            <i class="fa fa-pencil" title="Edit" (click)="editItem(row)"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

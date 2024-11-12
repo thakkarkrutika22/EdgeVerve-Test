@@ -22,6 +22,24 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## Project Structure
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Here’s a high-level overview of the project structure:
+
+src/app/components: Contains reusable components
+src/assets: Static assets like project screenshot and reusable stylesheets
+
+## Key Components:
+Component 1: app-top-nav
+Description: The top navigation component provides navigation and search functionality with fixed position.
+
+Component 2: app-left-nav
+Description: The left navigation bar includes various icons and has a fixed position.
+
+Component 3: app-search
+Description: This component has all fields to search for role level access control with custom chips component and clear/search buttons. It uses angular reactive forms.
+
+Component 4: app-table
+Description: This component displays a table with customizable data and action icons for editing and viewing items.
+
+
